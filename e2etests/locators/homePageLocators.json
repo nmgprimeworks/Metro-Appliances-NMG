@@ -1,0 +1,56 @@
+{
+  
+    "account_button": "//a[@href='my-account']", 
+    "appliaces_button": "//a[@href='/appliances']", 
+    "appliaces_tittle": "//h1[text()='Appliances']", 
+    "search_txt": "(//input[@placeholder='What can we help you find?'])[1]", 
+    "search_button": "//input[@id=':r0:']", 
+    "itemSelected_button": "img[src='https://images.webfronts.com/cache/frrprncwwebr.jpg?imgeng=/h_320/m_letterbox_ffffff_100']",
+    "wishListPage_button": "//a[@href='/my-account/wishlist']",
+    "nameItem_title": "(//a[@class='ProductList_itemName__FlS7V'])[1]",
+    "compareFirstItem_checkBox": "(//input[@class='sc-gKPRtg bpYRZx'])[1]",
+    "compareSecondItem_checkBox": "(//input[@class='sc-gKPRtg bpYRZx'])[2]",
+    "goTocompare_button": "//button[text()='GO TO COMPARE']",
+    "titleFirstItem_title": "(//p[@class='MuiTypography-root MuiTypography-body1 sc-eDvSVe emCKdc sc-cCjUiG bjRbw css-ti81ke'])[1]",
+    "titleSecondItem_title": "(//p[@class='MuiTypography-root MuiTypography-body1 sc-eDvSVe emCKdc sc-cCjUiG bjRbw css-ti81ke'])[2]",
+    "contactUsPage_button": "//span[text()='Contact Us']",
+
+
+    "laundry_button": "//div[text()='Laundry']",
+    "washers_button": "//a[@href='/laundry/washers']",
+    "dryers_button": "//a[@href='/laundry/dryers']",
+    "stackLaundry_button": "//div[text()='Stack Laundry']",
+    "laundryAccesories_button": "//div[text()='Laundry Accessories']",
+
+    "refrigeration_button": "//div[text()='Refrigeration']",
+    "frenchDoorRefrigerators_button": "//div[text()='French Door Refrigerators']",
+    "bottonFreezerRefrigerators_button": "//div[text()='Bottom Freezer Refrigerators']",
+    "refrigeratorAccesories_button": "//div[text()='Refrigerator Accessories']",
+
+    "ventilation_button": "//div[text()='Ventilation']",
+    "downdraft_button": "//div[text()='Downdraft']",
+
+    "diswashers_button": "//div[text()='Dishwashers']",
+    "builtInDiswashers_button": "//div[text()='Built-in Dishwashers']",
+    "portableDiswashers_button": "//div[text()='Portable Dishwasher']",
+    "diswashersAccesories_button": "//div[text()='Dishwasher Accessories']",
+
+
+    "outdoorLiving_button": "//div[text()='Outdoor Living']",
+    "pelletBBQ_button": "//div[text()='Pellet BBQ']",
+    "naturalGasBBQ_button": "//div[text()='Natural Gas BBQ']",
+    "lpGasBBQ_button": "//div[text()='LP Gas BBQ']",
+    "characoalBBQ_button": "//div[text()='Charcoal BBQ']",
+    "BBQAccesories_button": "//div[text()='BBQ Accessories']",
+
+    "extendedCare_button": "//div[text()='Extended Care']",
+
+    "clearance_button": "//div[text()='Clearance']",
+    "outlet_title": "(//p[text()='Outlet'])[2]",
+
+    "propertyManagement_button": "//div[text()='Property Management']",
+
+    "financing_button": "//div[text()='Financing']",
+
+    "shopByBrand_button": "//div[text()='Shop by Brand']"
+}

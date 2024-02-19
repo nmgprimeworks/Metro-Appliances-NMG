@@ -1,0 +1,7 @@
+{
+
+    "titleFirstItemCompared": "(//p[@class='MuiTypography-root MuiTypography-body1 sc-eDvSVe emCKdc sc-cCjUiG bjRbw css-ti81ke'])[1]",
+    "titleSecondItemCompared": "(//p[@class='MuiTypography-root MuiTypography-body1 sc-eDvSVe emCKdc sc-cCjUiG bjRbw css-ti81ke'])[2]",
+    "squareSpecifications": "//h4[text()='Specifications']"
+
+}

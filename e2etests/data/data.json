@@ -1,0 +1,43 @@
+{
+    "URL": "https://metroappliancesandmore.com.nmg-platform.com/",
+    "validEmail": "nmg-primeworks3@yopmail.com",
+    "invalidEmail": "nmg-primeworksxxxxx@yopmail.com",
+    "validPassword": "nmg2024-",
+    "invalidPassword": "Test123-xx",
+    "zipCode": "61761",
+    "zipCodeBilling": "",
+    "billingForm": {
+      "addres": "3506b West 8th Street Koreatown",
+      "zipCodeBilling": "90005",
+      "phoneNum": "321-564-2135",
+      "city": "Los Angeles",
+      "firstName": "Test",
+      "lastName": "NMG",
+      "state": "California"
+    },
+    "formPaymemt":{
+      "numberCreditcard":"4032033479057817",
+      "numberCcv":"373",
+      "expiryMonth":"January",
+      "expiryYear":"2029"
+  
+    },
+  
+    "searches":{
+      "bottomRefrigerator": "bottom freezer refrigerators"
+    },
+  
+    "formContactUs":{
+      "name": "Test",
+      "email": "nmg-primeworks@yopmail.com",
+      "priductSku": "L734341",
+      "phone": "321-564-2135",
+      "city": "Springfield",
+      "productDetails": "This is a test 123",
+      "message": "This is a test 123456789"
+    }
+  
+  
+  
+  
+  }

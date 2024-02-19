@@ -1,0 +1,123 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-compares-two-products;user-compares-two-products",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "User compares two products",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 454868600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User visit the metro appliances website",
+            "match": {
+              "location": "e2etests\\steps\\loginSteps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1999021099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User searches items",
+            "match": {
+              "location": "e2etests\\steps\\21-compareProductsSteps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 131064800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User adds two items to compare",
+            "match": {
+              "location": "e2etests\\steps\\21-compareProductsSteps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3223882400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User open the compare page",
+            "match": {
+              "location": "e2etests\\steps\\21-compareProductsSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1089612699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "User should see the same product added to campare",
+            "match": {
+              "location": "e2etests\\steps\\21-compareProductsSteps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1028756600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User should see the specifications",
+            "match": {
+              "location": "e2etests\\steps\\21-compareProductsSteps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1033227499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 379771099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@only",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-compares-two-products",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "User compares two products",
+    "tags": [],
+    "uri": "e2etests\\features\\21-compareProducts.feature"
+  }
+]
