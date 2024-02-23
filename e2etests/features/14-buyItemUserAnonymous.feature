@@ -6,7 +6,7 @@ Feature: User anonymous buys an item into the metro appliances website
 Background:
 Given User visit the metro appliances website
 
-@fail 
+@test 
    Scenario: User anonymous buys an item
     And User searches and adds an item to cart
     And User fills out the form

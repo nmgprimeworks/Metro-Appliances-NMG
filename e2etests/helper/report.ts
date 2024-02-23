@@ -4,7 +4,7 @@ report.generate({
     jsonDir: "test-results",
     reportPath: "test-results/reports/",
     reportName: "Playwright Automation Report",
-    pageTitle: "Sherman test report",
+    pageTitle: "Metro test report",
     displayDuration: false,
     metadata: {
         browser: {
@@ -20,7 +20,7 @@ report.generate({
     customData: {
         title: "Test Info",
         data: [
-            { label: "Project", value: "SHERMANÂ´S" },
+            { label: "Project", value: "Metro Appliances" },
             { label: "Release", value: "1.0.0" },
             { label: "Cycle", value: "Smoke-1" }
         ],

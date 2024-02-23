@@ -3,7 +3,7 @@ Feature: User compares two products
 Background:
 Given User visit the metro appliances website
 
-@only 
+@test 
    Scenario: User compares two products
     And User searches items
     And User adds two items to compare

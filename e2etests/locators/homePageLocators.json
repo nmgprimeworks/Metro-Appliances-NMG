@@ -5,11 +5,11 @@
     "appliaces_tittle": "//h1[text()='Appliances']", 
     "search_txt": "(//input[@placeholder='What can we help you find?'])[1]", 
     "search_button": "//input[@id=':r0:']", 
-    "itemSelected_button": "img[src='https://images.webfronts.com/cache/frrprncwwebr.jpg?imgeng=/h_320/m_letterbox_ffffff_100']",
+    "itemSelected_button": "(//a[@type='ProductCard'])[1]",
     "wishListPage_button": "//a[@href='/my-account/wishlist']",
     "nameItem_title": "(//a[@class='ProductList_itemName__FlS7V'])[1]",
-    "compareFirstItem_checkBox": "(//input[@class='sc-gKPRtg bpYRZx'])[1]",
-    "compareSecondItem_checkBox": "(//input[@class='sc-gKPRtg bpYRZx'])[2]",
+    "compareFirstItem_checkBox": "(//input[@class='sc-gKPRtg eKHplj'])[1]",
+    "compareSecondItem_checkBox": "(//input[@class='sc-gKPRtg eKHplj'])[2]",
     "goTocompare_button": "//button[text()='GO TO COMPARE']",
     "titleFirstItem_title": "(//p[@class='MuiTypography-root MuiTypography-body1 sc-eDvSVe emCKdc sc-cCjUiG bjRbw css-ti81ke'])[1]",
     "titleSecondItem_title": "(//p[@class='MuiTypography-root MuiTypography-body1 sc-eDvSVe emCKdc sc-cCjUiG bjRbw css-ti81ke'])[2]",
@@ -52,5 +52,11 @@
 
     "financing_button": "//div[text()='Financing']",
 
-    "shopByBrand_button": "//div[text()='Shop by Brand']"
+    "shopByBrand_button": "//div[text()='Shop by Brand']",
+
+    "cooking_button": "//div[text()='Cooking']",
+
+    "joinOurEmailList_button": "//button[text()='JOIN OUR EMAIL LIST']"
+
+    
 }

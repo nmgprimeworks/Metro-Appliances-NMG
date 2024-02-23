@@ -17,7 +17,7 @@ export default class homePageActions {
     }
 
     async searchAndSeleectAnItem() {
-        await this.page.locator(homePageLocators.search_button).fill('botton freezer refrigerator')
+        await this.page.locator(homePageLocators.search_button).fill('bottom freezer refrigerator')
         await this.page.keyboard.press('Enter');
         await this.page.waitForTimeout(2000);
         await this.page.evaluate(() => {
@@ -202,12 +202,12 @@ async selectBBQAccessoriesCategory() {
     await this.page.waitForTimeout(2000)
 }
 
-// method to test acces to extended care page
+// method to test access to extended care page
 async openExtendedPage() {
     await this.page.locator(homePageLocators.extendedCare_button).click()
 }
 
-// method to test acces to outlet PLP
+// method to test access to outlet PLP
 async openClearance() {
     await this.page.locator(homePageLocators.clearance_button).click()
 }
@@ -216,19 +216,56 @@ async validateItleOutletIsVisible() {
     await expect(this.page.locator(homePageLocators.outlet_title)).toBeVisible()
 }
 
-// method to test acces to property managment page
+// method to test access to property managment page
 async openPropertyManagementPage() {
     await this.page.locator(homePageLocators.propertyManagement_button).click()
 }
 
-// method to test acces to financing page
+// method to test access to financing page
 async openFinancingPage() {
     await this.page.locator(homePageLocators.financing_button).click()
 }
 
-// method to test acces to shop by brand page
+// method to test access to shop by brand page
 async openShopByBrandPage() {
     await this.page.locator(homePageLocators.shopByBrand_button).click()
+}
+
+
+// method to test access to laundry page
+async openLaundryPage() {
+    await this.page.locator(homePageLocators.laundry_button).click()
+}
+
+// method to test access to diswashers page
+async openDishwashersPage() {
+    await this.page.locator(homePageLocators.diswashers_button).click()
+}
+
+// method to test access to ventilation page
+async openVentilationPage() {
+    await this.page.locator(homePageLocators.ventilation_button).click()
+}
+
+// method to test access to outdoor Living page
+async openOutdoorLivingPage() {
+    await this.page.locator(homePageLocators.outdoorLiving_button).click()
+}
+
+// method to test access to cooking page
+async openCookingPage() {
+    await this.page.locator(homePageLocators.cooking_button).click()
+}
+
+// method to test access to Refrigeration page
+async openRefrigerationPage() {
+    await this.page.locator(homePageLocators.refrigeration_button).click()
+}
+
+
+// method to test access to join our email list page
+async openJoinOurEmailListPage() {
+    await this.page.locator(homePageLocators.joinOurEmailList_button).click()
 }
 
 }

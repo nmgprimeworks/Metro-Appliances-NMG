@@ -4,7 +4,7 @@
     "invalidEmail": "nmg-primeworksxxxxx@yopmail.com",
     "validPassword": "nmg2024-",
     "invalidPassword": "Test123-xx",
-    "zipCode": "61761",
+    "zipCode": "90005",
     "zipCodeBilling": "",
     "billingForm": {
       "addres": "3506b West 8th Street Koreatown",
@@ -13,7 +13,8 @@
       "city": "Los Angeles",
       "firstName": "Test",
       "lastName": "NMG",
-      "state": "California"
+      "state": "California",
+      "billingAddress": "3506b West 8th Street Koreatown"
     },
     "formPaymemt":{
       "numberCreditcard":"4032033479057817",

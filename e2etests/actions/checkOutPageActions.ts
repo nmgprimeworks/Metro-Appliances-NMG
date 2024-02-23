@@ -14,11 +14,17 @@ export default class checkOutPageActions{
     async fillFormBilling() {
         await this.page.locator(checkOutPageLocators.firstName_txt).fill(data.billingForm.firstName)
         await this.page.locator(checkOutPageLocators.lastName_txt).fill(data.billingForm.lastName)
+        await this.page.locator(checkOutPageLocators.email_txt).fill(data.validEmail)
+        await this.page.locator(checkOutPageLocators.confirmEmail_txt).fill(data.validEmail)
         await this.page.locator(checkOutPageLocators.phoneNum_txt).fill(data.billingForm.phoneNum)
         const continueButton = await this.page.locator(checkOutPageLocators.continue_button)
         continueButton.scrollIntoViewIfNeeded()
-        await this.page.waitForTimeout(1000);
+        await this.page.locator(checkOutPageLocators.billingAddres_txt).fill(data.billingForm.billingAddress)
+        await this.page.locator(checkOutPageLocators.city_txt).fill(data.billingForm.city)
+        await this.page.locator(checkOutPageLocators.zipCode_txt).fill(data.billingForm.zipCodeBilling)
+        await this.page.locator(checkOutPageLocators.stateOptions_lst).selectOption({ label: data.billingForm.state })
         await this.page.locator(checkOutPageLocators.continue_button).click()
+        await this.page.waitForTimeout(1000);
         await this.page.locator(checkOutPageLocators.continueStartPickup_button).click()
         await this.page.waitForTimeout(1000);
 
@@ -43,8 +49,11 @@ export default class checkOutPageActions{
     }
 
     async validatePurchase() {
+        const isVisibleId = await this.page.locator(checkOutPageLocators.id_message).isVisible()
+        await expect(isVisibleId).toEqual(true)
         const idPurchase = await this.page.locator(checkOutPageLocators.id_message).allTextContents()
         const idPurchaseStr = String(idPurchase)
+        await this.page.waitForTimeout(3000)
         console.log("este es el id de la compra "+ idPurchaseStr)
         await getPage().goto("https://yopmail.com/es/")
         await this.page.waitForTimeout(3000);
@@ -52,6 +61,8 @@ export default class checkOutPageActions{
         await this.page.keyboard.press('Enter');
         await this.page.waitForTimeout(2000);
        // const idEmail = await this.page.locator("//td[text()='"+ idPurchaseOk +"']")
+       const isVisibleIdEmail = await this.page.locator(checkOutPageLocators.idEmail_message).isVisible()
+        await expect(isVisibleIdEmail).toEqual(true)
         const idEmail = await this.page.locator(checkOutPageLocators.idEmail_message).allInnerTexts()
         //const idEmail = await this.page.locator("//h2[text()='Thank you for your order!']")
         const idEmailStr = String(idEmail)
