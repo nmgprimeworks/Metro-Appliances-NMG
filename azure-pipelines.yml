@@ -9,9 +9,8 @@ steps:
     sudo apt-get update
     sudo apt-get install -y nodejs npm
     npm install
-    npm install -g cucumber
     npm install -g playwright
-    npm install -g @cucumber/cucumber
+    npm install @cucumber/cucumber -D   
   displayName: 'Install dependencies'
 
 - script: |
