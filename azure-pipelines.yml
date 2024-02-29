@@ -11,9 +11,9 @@ steps:
     npm install
     npm install -g playwright
     npm install @cucumber/cucumber -D  
-    
+    chmod +x /package.json
   displayName: 'Install dependencies'
 
 - script: |
-    npm run test
+    npm run testTags --tags="@only"
   displayName: 'Run Playwright and Cucumber tests'
