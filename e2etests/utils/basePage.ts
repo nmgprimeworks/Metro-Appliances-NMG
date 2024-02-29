@@ -16,8 +16,8 @@ Before(async function () {
 
 
     
-    browser = await chromium.launch({ headless: false, channel: "chrome", args: ['--start-maximized'] })
-    bCtx = await browser.newContext({ viewport: null, javaScriptEnabled: true, recordVideo: { dir: "test-results/videos"} })
+    browser = await chromium.launch({ headless: true, channel: "chrome", args: ['--start-maximized'] })
+    bCtx = await browser.newContext({ viewport: null, javaScriptEnabled: true })
     page = await bCtx.newPage()
     
     
@@ -31,7 +31,7 @@ After(async function ({ pickle, result }) {
         const videoPath = await page.video()?.path()
         const img = await page.screenshot({ path: `./test-results/screenshots/${pickle.name}.png`, type: "png" })
         await this.attach(img, "image/png")
-        await this.attach(fs.readFileSync(videoPath),'video/webm')
+        
        
     }
 
