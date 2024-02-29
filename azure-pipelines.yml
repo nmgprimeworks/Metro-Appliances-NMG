@@ -9,7 +9,7 @@ steps:
 
 - script: |
     npm install
-    npm install -g cucumber
+    npm install @cucumber/cucumber -D
     npm install -g playwright
   displayName: 'Install dependencies'
 
