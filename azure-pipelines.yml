@@ -1,17 +1,16 @@
-trigger:
-- main
-
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '20'
+  displayName: 'Install Node.js'
+
 - script: |
-    sudo apt-get update
-    sudo apt-get install -y nodejs npm
     npm install
+    npm install -g cucumber
     npm install -g playwright
-    npm install @cucumber/cucumber -D  
-    chmod +x package.json
   displayName: 'Install dependencies'
 
 - script: |
