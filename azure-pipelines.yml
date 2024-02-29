@@ -10,9 +10,10 @@ steps:
     sudo apt-get install -y nodejs npm
     npm install
     npm install -g playwright
-    npm install @cucumber/cucumber -D   
+    npm install @cucumber/cucumber -D  
+    
   displayName: 'Install dependencies'
 
 - script: |
-    npm run testTags --tags="@only"
+    npm run test
   displayName: 'Run Playwright and Cucumber tests'
