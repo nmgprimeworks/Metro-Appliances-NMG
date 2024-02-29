@@ -1,6 +1,6 @@
 {
     "default": {
-        "dryRun": false,
+        "dryRun": true,
         "formatOptions": {
            
             "snippetInterface": "async-await"
@@ -21,7 +21,7 @@
             "@only"
           ],
         "format": [
-            "progress-bar",
+        
             "html:test-results/cucumber-report.html",
             "json:test-results/cucumber-report.json"
         ]
