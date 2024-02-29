@@ -11,7 +11,7 @@ steps:
     npm install
     npm install -g playwright
     npm install @cucumber/cucumber -D  
-    chmod +x /package.json
+    chmod +x package.json
   displayName: 'Install dependencies'
 
 - script: |
