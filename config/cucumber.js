@@ -4,7 +4,7 @@ module.exports =
 {
     default: {
         tags: process.env.npm_config_TAGS || "",
-        dryRun: false,
+        dryRun: true,
         formatOptions: {
 
             "snippetInterface": "async-await"
@@ -25,7 +25,6 @@ module.exports =
             "@only"
         ],
         format: [
-            "progress-bar",
             "html:test-results/cucumber-report.html",
             "json:test-results/cucumber-report.json"
         ]
