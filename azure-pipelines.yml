@@ -13,7 +13,7 @@ steps:
   displayName: 'npm ci'
 - script: npx playwright install --with-deps
   displayName: 'Install Playwright browsers'
-- script: npm run test
+- script: run testTags --TAGS="@only"
   displayName: 'execute tests'
   env:
     CI: 'true'
