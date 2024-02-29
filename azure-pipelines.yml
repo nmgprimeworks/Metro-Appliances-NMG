@@ -17,5 +17,9 @@ steps:
   displayName: 'npm install'
 
 - script: |
+    npm i @cucumber/cucumber -D 
+  displayName: 'instalar cucumber'
+
+- script: |
     npm run testTags --TAGS="@test" 
   displayName: 'execute tests'
