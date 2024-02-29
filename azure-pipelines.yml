@@ -8,9 +8,9 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm install
+    npm ci
+    npx playwright install --with-deps
     npm install @cucumber/cucumber -D
-    npm install -g playwright
   displayName: 'Install dependencies'
 
 - script: |
