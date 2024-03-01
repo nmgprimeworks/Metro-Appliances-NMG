@@ -8,7 +8,7 @@ trigger:
 pool:
       vmImage: "ubuntu-latest"
  
-container: mcr.microsoft.com/playwright:v%version%-jammy
+container: mcr.microsoft.com/playwright:v1.42.0-jammy
 
 steps:
 
