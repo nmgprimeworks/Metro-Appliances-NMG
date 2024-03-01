@@ -1,21 +1,22 @@
+name: Playwright Tests
+ 
+
 trigger:
-- main
+  - main
+ 
 
 pool:
-  vmImage: 'windows-2019'
+      vmImage: "windows-2019"
+ 
+container: mcr.microsoft.com/playwright:bionic
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '21.x'
-  displayName: 'Install Node.js'
 
 - script: |
     npm install
-    npm install -g cucumber
-    npm install -g playwright
-  displayName: 'Install dependencies'
+  displayName: 'npm install'
+
 
 - script: |
-    npm run testTags -- --tags "@test" 
-  displayName: 'Run Playwright and Cucumber tests with @only tag'
+    npm run testTags -- --tags "@only" 
+  displayName: 'execute tests'
