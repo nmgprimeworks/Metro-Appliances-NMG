@@ -21,6 +21,9 @@ steps:
 - script: npx playwright install --with-deps
   displayName: 'Install Playwright browsers'
 
+- script: chmod +x node_modules/.bin/cucumber-js
+  displayName: 'Grant execute permission to cucumber-js'
+
 - script: |
     npm run test
   displayName: 'execute tests'
