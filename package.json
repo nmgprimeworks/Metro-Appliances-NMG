@@ -4,8 +4,7 @@
   "description": "Automation testing of metro appliances website",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js test",
-    "posttest": "npx ts-node e2etests/helper/report.ts ",
+    "test": "cucumber-js",
     "testTags": "cucumber-js --config=config/cucumber.js || true"
   },
   "keywords": [
