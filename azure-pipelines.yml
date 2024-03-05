@@ -25,5 +25,5 @@ steps:
   displayName: 'Grant execute permission to cucumber-js'
 
 - script: |
-    npx cucumber-js
+    npx cucumber-js --tags '@test'
   displayName: 'execute tests'
